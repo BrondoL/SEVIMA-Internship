@@ -9,6 +9,8 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+use App\Models\UsersModel;
+
 /**
  * Class BaseController
  *
@@ -36,7 +38,7 @@ class BaseController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = [];
+	protected $helpers = ['form', 'url'];
 
 	/**
 	 * Constructor.
@@ -53,6 +55,9 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
-		// E.g.: $this->session = \Config\Services::session();
+		date_default_timezone_set('Asia/Jakarta');
+		$this->db = \Config\Database::connect();
+		$this->session = \Config\Services::session();
+		$this->UsersModel = new UsersModel();
 	}
 }

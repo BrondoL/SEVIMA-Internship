@@ -1,0 +1,128 @@
+CRITICAL - 2021-06-16 04:14:42 --> Invalid file: users/v_auth.php
+#0 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/v_auth.ph...')
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('users/v_auth', Array, true)
+#2 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(9): view('users/v_auth')
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->index()
+#4 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#8 {main}
+CRITICAL - 2021-06-16 04:15:24 --> Invalid file: users/v_auth.php
+#0 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/v_auth.ph...')
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('users/v_auth', Array, true)
+#2 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(9): view('users/v_auth')
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->index()
+#4 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#8 {main}
+CRITICAL - 2021-06-16 04:15:28 --> Invalid file: users/v_auth/.php
+#0 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/v_auth/.p...')
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('users/v_auth/', Array, true)
+#2 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(9): view('users/v_auth/')
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->index()
+#4 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#8 {main}
+CRITICAL - 2021-06-16 04:43:50 --> Invalid file: errors/html/error_40.php
+#0 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/html/err...')
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('errors/html/err...', Array, true)
+#2 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(68): view('errors/html/err...')
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#4 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#8 {main}
+CRITICAL - 2021-06-16 16:54:43 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:54:45 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:54:45 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:55:09 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:55:09 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:55:10 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:55:10 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:55:41 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:55:41 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:55:42 --> Undefined property: App\Controllers\Auth::$UsersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 30, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->validasi()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 16:57:53 --> Undefined property: App\Controllers\Auth::$usersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Auth.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 15, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Auth->index()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}

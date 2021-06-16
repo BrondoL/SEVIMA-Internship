@@ -1,0 +1,87 @@
+CRITICAL - 2021-06-17 00:09:42 --> Undefined index: posts.foto
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/BrondoL/I...', 92, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->view_post()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-17 00:09:43 --> Undefined index: posts.foto
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/BrondoL/I...', 92, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->view_post()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-17 00:09:43 --> Undefined index: posts.foto
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/BrondoL/I...', 92, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->view_post()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-17 00:09:43 --> Undefined index: posts.foto
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/BrondoL/I...', 92, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->view_post()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-17 00:09:43 --> Undefined index: posts.foto
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/BrondoL/I...', 92, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->view_post()
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-17 00:11:25 --> Undefined index: foto
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Views/users/v_profile/index.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/home/BrondoL/I...', 75, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(230): include('/home/BrondoL/I...')
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('users/v_profile...', Array, true)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(16): view('users/v_profile...', Array)
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->index(Array)
+#6 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#10 {main}
+CRITICAL - 2021-06-17 00:47:38 --> Undefined property: App\Controllers\Profile::$PostModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 11, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->index(Array)
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-17 00:47:45 --> Call to undefined method App\Models\PostsModel::countAllResult
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(11): CodeIgniter\Model->__call('countAllResult', Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->index(Array)
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-17 01:24:31 --> Too few arguments to function App\Controllers\Profile::index(), 0 passed in /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->index()
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#5 {main}
+CRITICAL - 2021-06-17 03:18:20 --> Undefined variable: foto_user
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Views/users/v_profile/komen.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/BrondoL/I...', 4, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(230): include('/home/BrondoL/I...')
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('users/v_profile...', Array, true)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Action.php(78): view('users/v_profile...', Array)
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Action->fetch_komen('1')
+#6 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Action))
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#10 {main}

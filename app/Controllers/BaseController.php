@@ -10,6 +10,9 @@ use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 use App\Models\UsersModel;
+use App\Models\PostsModel;
+use App\Models\LikesModel;
+use App\Models\KomentarModel;
 
 /**
  * Class BaseController
@@ -59,5 +62,8 @@ class BaseController extends Controller
 		$this->db = \Config\Database::connect();
 		$this->session = \Config\Services::session();
 		$this->UsersModel = new UsersModel();
+		$this->PostsModel = new PostsModel();
+		$this->LikesModel = new LikesModel();
+		$this->KomentarModel = new KomentarModel();
 	}
 }

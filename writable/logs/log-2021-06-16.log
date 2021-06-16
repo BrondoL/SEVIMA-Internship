@@ -126,3 +126,37 @@ CRITICAL - 2021-06-16 16:57:53 --> Undefined property: App\Controllers\Auth::$us
 #4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
 #6 {main}
+CRITICAL - 2021-06-16 20:34:25 --> Too few arguments to function App\Controllers\Profile::index(), 0 passed in /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->index()
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#5 {main}
+CRITICAL - 2021-06-16 21:06:32 --> Undefined property: App\Controllers\Profile::$usersModel
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/home/BrondoL/I...', 9, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->index('brondol')
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#6 {main}
+CRITICAL - 2021-06-16 21:06:49 --> Call to a member function getRowArray() on null
+#0 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->index('brondol')
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#5 {main}
+CRITICAL - 2021-06-16 22:30:31 --> Undefined variable: foto
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Views/users/v_profile/upload.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/BrondoL/I...', 15, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(230): include('/home/BrondoL/I...')
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('users/v_profile...', Array, true)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Profile.php(23): view('users/v_profile...')
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Profile->form_upload()
+#6 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#10 {main}

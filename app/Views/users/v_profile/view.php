@@ -13,14 +13,16 @@
                                     <img src="<?= base_url("images/posts/thumb") . '/thumb_' . $foto; ?>" alt="foto" width="600">
                                 </div>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col">
-                                    <i class="far fa-edit fa-lg"></i>
-                                    <i class="far fa-trash-alt fa-lg"></i>
+                            <?php if ($author == session()->get('username')) : ?>
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <button style="background-color:transparent;border:none;" onclick="edit_post(<?= $id; ?>)"><i class="far fa-edit fa-lg"></i></button>
+                                        <button style="background-color:transparent;border:none;" onclick="hapus_post(<?= $id; ?>)"><i class="far fa-trash-alt fa-lg"></i></button>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php endif; ?>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 komensection">
                             <div class="row">
                                 <div class="col">
                                     <img src="<?= base_url('images/profile') . '/' . $foto_user; ?>" alt="Profile Picture" width="40px" class="img-thumbnail rounded-circle">
@@ -29,7 +31,7 @@
                                     <textarea cols="45" rows="10" style="border: none;outline:none" readonly><?= $deskripsi; ?></textarea>
                                 </div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row">
                                 <div class="col">
                                     <?php if ($cek_like) : ?>
                                         <button style="background-color:transparent;border:none;" onclick="like(<?= $id; ?>)"><i class="fas fa-heart fa-2x lope" style="color: red;"></i></button>
@@ -37,6 +39,13 @@
                                         <button style="background-color:transparent;border:none;" onclick="like(<?= $id; ?>)"><i class="far fa-heart fa-2x lope"></i></button>
                                     <?php endif; ?>
                                     <label for="komentar"><i class="far fa-comment fa-2x"></i></label>
+                                </div>
+                            </div>
+                            <div class="row mb-3 px-2">
+                                <div class="col">
+                                    <?php if ($total_like != 0) : ?>
+                                        <small>Liked by <?= $total_like; ?> people</small>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <div class="viewkomen"></div>
@@ -126,4 +135,58 @@
             });
         });
     });
+
+    function hapus_post(id) {
+        Swal.fire({
+            title: 'Hapus ?',
+            text: `Apakah anda yakin hapus postingan ini ?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya!',
+            cancelButtonText: 'Tidak'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: "<?= base_url('Action/hapus_post') ?>",
+                    type: "POST",
+                    dataType: "json",
+                    data: {
+                        id: id
+                    },
+                    success: function(response) {
+                        if (response.sukses) {
+                            Swal.fire({
+                                title: "Berhasil!",
+                                text: "Berhasil menghapus postingan",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                            location.reload();
+                        }
+                    }
+                });
+            }
+        })
+    }
+
+    function edit_post(id) {
+        $.ajax({
+            type: "POST",
+            url: "<?= base_url('Profile/form_edit'); ?>",
+            data: {
+                id: id
+            },
+            dataType: "json",
+            success: function(response) {
+                if (response.sukses) {
+                    $('#modalview').modal('hide');
+                    $('.viewmodal').html(response.sukses).show();
+                    $('#modaledit').modal('show');
+                }
+            }
+        });
+    }
 </script>

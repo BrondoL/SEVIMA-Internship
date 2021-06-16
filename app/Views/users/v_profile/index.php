@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- Fontawesome -->
     <link href="<?= base_url('assets/fontawesome/css/all.css'); ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/style.css'); ?>" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('images/logo.png'); ?>" />
 

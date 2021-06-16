@@ -1,0 +1,16 @@
+.komensection::-webkit-scrollbar {
+  display: none;
+}
+
+.komensection {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.komensection {
+  height: 440px;
+  overflow-y: scroll;
+  /* Add the ability to scroll */
+}

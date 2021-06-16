@@ -83,4 +83,38 @@ class Action extends BaseController
             exit(view('errors/html/error_404'));
         }
     }
+
+    public function hapus_komen()
+    {
+        $request = \Config\Services::request();
+        if ($request->isAJAX()) {
+            $id_komentar = $request->getVar('id');
+            $this->KomentarModel->delete($id_komentar);
+
+            $msg = [
+                'sukses' => 1
+            ];
+
+            echo json_encode($msg);
+        } else {
+            exit(view('errors/html/error_404'));
+        }
+    }
+
+    public function hapus_post()
+    {
+        $request = \Config\Services::request();
+        if ($request->isAJAX()) {
+            $id_post = $request->getVar('id');
+            $this->PostsModel->delete($id_post);
+
+            $msg = [
+                'sukses' => 1
+            ];
+
+            echo json_encode($msg);
+        } else {
+            exit(view('errors/html/error_404'));
+        }
+    }
 }

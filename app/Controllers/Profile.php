@@ -91,7 +91,7 @@ class Profile extends BaseController
             $row = $this->PostsModel->join('users', 'users.id_user = posts.author')->where('id_post', $id)->get()->getRowArray();
             $id_user = $this->session->get('user_id');
             $cek_like = $this->LikesModel->where('id_post', $id)->where('id_user', $id_user)->countAllResults();
-
+            $total_like = $this->LikesModel->where('id_post', $id)->countAllResults();
             $data = [
                 'id'            => $row['id_post'],
                 'foto'          => $row['foto_post'],
@@ -99,11 +99,35 @@ class Profile extends BaseController
                 'author'        => $row['username'],
                 'created_at'    => $row['created_at'],
                 'foto_user'     => $row['foto'],
-                'cek_like'      => $cek_like
+                'cek_like'      => $cek_like,
+                'total_like'    => $total_like
             ];
 
             $msg = [
                 'sukses' => view('users/v_profile/view', $data)
+            ];
+
+            echo json_encode($msg);
+        } else {
+            exit(view('errors/html/error_404'));
+        }
+    }
+
+    public function form_edit()
+    {
+        $request = \Config\Services::request();
+        if ($request->isAJAX()) {
+            $id = $request->getVar('id');
+            $row = $this->PostsModel->find($id);
+
+            $data = [
+                'id' => $row['id_post'],
+                'deskripsi' => $row['deskripsi'],
+                'author'  => $row['author'],
+            ];
+
+            $msg = [
+                'sukses' => view('users/v_profile/edit_post', $data)
             ];
 
             echo json_encode($msg);

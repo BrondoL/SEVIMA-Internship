@@ -6,6 +6,9 @@ class Profile extends BaseController
 {
     public function index($user)
     {
+        if (!session('login')) {
+            return redirect()->to(base_url('Auth'));
+        }
         $user = $this->UsersModel->where('username', $user)->get()->getRowArray();
         $posts = $this->PostsModel->where('author', $user['id_user'])->get()->getResultArray();
         $total_post = $this->PostsModel->where('author', $user['id_user'])->countAllResults();
@@ -130,6 +133,45 @@ class Profile extends BaseController
                 'sukses' => view('users/v_profile/edit_post', $data)
             ];
 
+            echo json_encode($msg);
+        } else {
+            exit(view('errors/html/error_404'));
+        }
+    }
+
+    public function edit_post()
+    {
+        $request = \Config\Services::request();
+
+        if ($request->isAJAX()) {
+            $validation = \Config\Services::validation();
+            $valid = $this->validate([
+                'deskripsi' => [
+                    'label' => 'Deskripsi',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong',
+                    ]
+                ],
+            ]);
+            if (!$valid) {
+                $msg = [
+                    'error' => [
+                        'deskripsi'   => $validation->getError('deskripsi'),
+                    ]
+                ];
+            } else {
+                $ubahdata = [
+                    'deskripsi'  => $request->getVar('deskripsi'),
+                ];
+
+                $id = $request->getVar('id');
+
+                $this->PostsModel->update($id, $ubahdata);
+                $msg = [
+                    'sukses' => 'Data berhasil diupdate'
+                ];
+            }
             echo json_encode($msg);
         } else {
             exit(view('errors/html/error_404'));

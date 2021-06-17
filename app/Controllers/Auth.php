@@ -72,6 +72,9 @@ class Auth extends BaseController
 
     public function daftar()
     {
+        if (session('login')) {
+            return redirect()->to(base_url('Home'));
+        }
         $data = [
             'title' => 'InstaApp - Register'
         ];

@@ -1,0 +1,12 @@
+CRITICAL - 2021-06-18 07:10:27 --> Undefined variable: id
+#0 /home/BrondoL/Internship/SEVIMA_Internship/app/Views/users/v_home/index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/home/BrondoL/I...', 7, Array)
+#1 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(230): include('/home/BrondoL/I...')
+#2 /home/BrondoL/Internship/SEVIMA_Internship/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/BrondoL/Internship/SEVIMA_Internship/system/Common.php(1271): CodeIgniter\View\View->render('users/v_home/in...', Array, true)
+#4 /home/BrondoL/Internship/SEVIMA_Internship/app/Controllers/Home.php(20): view('users/v_home/in...', Array)
+#5 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#6 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/BrondoL/Internship/SEVIMA_Internship/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/BrondoL/Internship/SEVIMA_Internship/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/BrondoL/Internship/SEVIMA_Internship/system/Commands/Server/rewrite.php(45): require_once('/home/BrondoL/I...')
+#10 {main}

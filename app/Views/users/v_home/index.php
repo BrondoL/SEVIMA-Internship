@@ -1,6 +1,18 @@
 <?= $this->extend('users/v_layout/index'); ?>
 <?= $this->section('content'); ?>
 
+<script>
+    function datakomen(id) {
+        $.ajax({
+            url: "<?= base_url('Home/fetch_komen') . '/'; ?>" + id,
+            dataType: "json",
+            success: function(response) {
+                $('.viewkomen' + id).html(response.data);
+            }
+        });
+    }
+</script>
+
 <main>
     <?php foreach ($posts as $p) : ?>
         <div class="album py-5 bg-light">
@@ -34,27 +46,16 @@
 
                         <p class="card-text mt-3 px-2"><?= $p['deskripsi']; ?></p>
 
-                        <?php $komen = $KomentarModel->join('users', 'users.id_user = komentar.id_user')->where('id_post', $p['id_post'])->get()->getResultArray(); ?>
-                        <?php foreach ($komen as $k) : ?>
-                            <div class="row">
-                                <div class="col">
-                                    <img src="<?= base_url('images/profile') . '/' . $k['foto']; ?>" alt="Profile Picture" width="25px" class="img-thumbnail rounded-circle">
-                                    <small><b><?= $k['username']; ?></b></small>
-                                    <small><?= $k['komentar']; ?></small>
-                                </div>
-                                <?php if ($k['id_user'] == session()->get('user_id')) : ?>
-                                    <div class="col-1">
-                                        <button style="background-color:transparent;border:none;" onclick="hapus_komen(<?= $k['id_komentar']; ?>)"><i class="fas fa-trash-alt fa-sm"></i></button>
-                                    </div>
-                                <?php endif; ?>
-                            </div>
-                        <?php endforeach; ?>
+                        <div class="viewkomen<?= $p['id_post']; ?>"></div>
+                        <script>
+                            datakomen(<?= $p['id_post']; ?>);
+                        </script>
                         <hr>
                         <form action="<?= base_url('Action/komen'); ?>" method="POST" class="formkomen">
-                            <input type="hidden" value="<?= $p['id_post']; ?>" id="id" name="id">
+                            <input type="hidden" value="<?= $p['id_post']; ?>" id="id<?= $p['id_post']; ?>" name="id">
                             <div class="row">
                                 <div class="col">
-                                    <textarea style="border: none;outline:none" cols="39" rows="1" placeholder="Add a comment..." id="komentar<?= $p['id_post']; ?>" name="komentar"></textarea>
+                                    <textarea style="border: none;outline:none" cols="107" rows="1" placeholder="Add a comment..." id="komentar<?= $p['id_post']; ?>" name="komentar"></textarea>
                                     <div class="invalid-feedback errorKomentar<?= $p['id_post']; ?>">
 
                                     </div>
@@ -139,15 +140,15 @@
                 success: function(response) {
                     if (response.error) {
                         if (response.error.komentar) {
-                            $('#komentar' + $('input#id').val()).addClass('is-invalid');
-                            $('.errorKomentar' + $('input#id').val()).html(response.error.komentar);
+                            $('#komentar' + $('input[name="id"]').val()).addClass('is-invalid');
+                            $('.errorKomentar' + $('input[name="id"]').val()).html(response.error.komentar);
                         } else {
-                            $('#komentar' + $('input#id').val()).removeClass('is-invalid');
-                            $('.errorKomentar' + $('input#id').val()).html('');
+                            $('#komentar' + $('input[name="id"]').val()).removeClass('is-invalid');
+                            $('.errorKomentar' + $('input[name="id"]').val()).html('');
                         }
                     } else {
-                        $('textarea#komentar' + $('input#id').val()).val('');
-                        location.reload();
+                        $('textarea#komentar' + $('input[name="id"]').val()).val('');
+                        datakomen($('input[name="id"]').val());
                     }
                 },
                 error: function(xhr, ajaxOptions, thrownError) {
@@ -157,7 +158,7 @@
         });
     });
 
-    function hapus_komen(id) {
+    function hapus_komen(id, id_post) {
         $.ajax({
             url: "<?= base_url('Action/hapus_komen') ?>",
             type: "POST",
@@ -167,7 +168,7 @@
             },
             success: function(response) {
                 if (response.sukses) {
-                    location.reload();
+                    datakomen(id_post);
                 }
             }
         });

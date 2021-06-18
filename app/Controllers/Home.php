@@ -19,4 +19,21 @@ class Home extends BaseController
 		];
 		return view('users/v_home/index', $data);
 	}
+
+	public function fetch_komen($id)
+	{
+		$request = \Config\Services::request();
+		// if ($request->isAJAX()) {
+		$data = [
+			'komen' => $this->KomentarModel->join('users', 'users.id_user = komentar.id_user')->where('id_post', $id)->get()->getResultArray()
+		];
+		$msg = [
+			'data' => view('users/v_home/komen', $data)
+		];
+
+		echo json_encode($msg);
+		// } else {
+		// 	exit(view('errors/html/error_404'));
+		// }
+	}
 }
